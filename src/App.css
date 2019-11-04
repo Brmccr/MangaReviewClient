@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  background-color: #0e0b16;
+  /* #0e0b16 */
+}
+
+.appcard:hover{
+  transform: scale(1.05);
+  transition-duration: 600ms;
+}
+
+.appcard{
+  margin-bottom: 10px;
 }
 
 .App-logo {

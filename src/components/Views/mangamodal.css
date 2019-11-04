@@ -1,0 +1,36 @@
+.modal-content {
+    display: flex;
+    width: 42em !important;
+    align-content: center;
+    left: -5em;
+}
+
+.carousel-inner{
+    width: 45em !important;
+    left: .5em;
+    height: auto;
+}
+
+.carousel-inner:hover{
+    transform: scale(1.1);
+    transition-duration: 600ms;
+}
+
+.carousel-item{
+    width: 50em !important;
+}
+
+
+.carousel-slide{
+    width: 50em !important;
+}
+
+.img src{
+    width: 30em !important;
+}
+
+
+.carousel-item active{
+    width: 30em;
+    height: auto;
+}
