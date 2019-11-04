@@ -1,11 +1,12 @@
 import React from 'react';
 import {Table, Button} from 'reactstrap';
 import { userInfo } from 'os';
+import APIURL from '../../helpers/environment';
 
 const ReviewTable = (props) => {
 
     const deleteReview = (review) => {
-        fetch(`http://localhost:3000/manga/${review.id}`, {
+        fetch(`${APIURL}/manga/${review.id}`, {
         method: 'DELETE',
         headers: new Headers({
             'Content-Type': 'application/json',

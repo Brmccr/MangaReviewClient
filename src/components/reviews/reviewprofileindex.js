@@ -3,7 +3,7 @@ import {Container, Row, Col} from 'reactstrap';
 import ReviewCreate from './reviewcreate';
 import ReviewTable from './reviewtable';
 import ReviewEdit from './reviewedit';
-
+import APIURL from '../../helpers/environment';
 
 const ReviewProfileIndex = (props) => {
     const [reviews, setReviews] = useState([]);
@@ -11,7 +11,7 @@ const ReviewProfileIndex = (props) => {
     const [reviewToUpdate, setReviewToUpdate] = useState({});
 
     const fetchReviews = () => {
-        fetch('http://localhost:3000/manga/review', {
+        fetch(`${APIURL}/manga/review`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

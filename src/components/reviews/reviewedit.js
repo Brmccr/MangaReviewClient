@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody} from 'reactstrap';
+import APIURL from '../../helpers/environment';
+
 
 const ReviewEdit = (props) => {
 
@@ -10,7 +12,7 @@ const ReviewEdit = (props) => {
 
     const reviewUpdate = (event, review) => {
         event.preventDefault();
-        fetch(`http://localhost:3000/manga/${props.reviewToUpdate.id}`,{
+        fetch(`${APIURL}/manga/${props.reviewToUpdate.id}`,{
             method: 'PUT',
             body: JSON.stringify({rating: editRating, paragraph: editPar}),
             headers: new Headers({

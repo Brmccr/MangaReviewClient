@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import ReviewCreateNGE from './reviewcreateNGE';
-
+import APIURL from '../../helpers/environment';
 
 const ReviewIndexNGE = (props) => {
     const [reviews, setReviews] = useState([]);
@@ -9,7 +9,7 @@ const ReviewIndexNGE = (props) => {
     const [reviewToUpdate, setReviewToUpdate] = useState({});
 
     const fetchReviews = () => {
-        fetch('http://localhost:3000/manga/reviewNGE', {
+        fetch(`${APIURL}/manga/reviewNGE`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

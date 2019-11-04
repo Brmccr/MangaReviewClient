@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import ReviewCreateBerserk from './reviewcreateberserk';
 import ReviewTableBerserk from './reviewtableberserk';
-
+import APIURL from '../../helpers/environment';
 
 const ReviewIndexBerserk = (props) => {
     const [reviews, setReviews] = useState([]);
@@ -10,7 +10,7 @@ const ReviewIndexBerserk = (props) => {
     const [reviewToUpdate, setReviewToUpdate] = useState({});
 
     const fetchReviews = () => {
-        fetch('http://localhost:3000/manga/reviewberserk', {
+        fetch(`${APIURL}/manga/reviewberserk`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

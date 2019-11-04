@@ -6,7 +6,6 @@ import {
   Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button, Row, Col, Container,
 } from 'reactstrap';
-import {Route, Link, Switch, BrowserRouter as Router} from 'react-router-dom';
 import Sitebar from './components/home/Navbar';
 import Auth from './auth/Auth';
 import MangaView from './components/Views/mangaview';

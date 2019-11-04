@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import {Table, Button} from 'reactstrap';
+import APIURL from '../../helpers/environment';
 
 const NGEMangaReviewTable = (props) => {
     const [mangareviews, setmangaReviews] = useState([]);
 
 const fetchmangaReviews = () => {
-    fetch('http://localhost:3000/manga/reviewNGE', {
+    fetch(`${APIURL}manga/reviewNGE`, {
         method: 'GET',
         headers: new Headers ({
             'Content-Type': 'application/json',
