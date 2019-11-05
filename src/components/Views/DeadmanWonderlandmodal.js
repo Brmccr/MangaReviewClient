@@ -6,6 +6,8 @@ import './mangamodal.css';
 import ReviewCollapse from './mangareviewcollapse';
 import WriteReviewCollapse from '../Views/writereviewcollapse';
 import DeadmanWonderlandCarousel from './DeadmanWonderlandcarousel'
+import DeadmanWonderlandReviewCollapse from '../reviewtables/DeadmanWonderlandCollapse';
+import ReviewModalDeadmanWonderland from '../DeadmanWonderlandManga/reviewmodalDeadmanWonderland';
 
 const DeadmanWonderlandModal = (props) => {
   const {
@@ -47,8 +49,8 @@ The young protagonist is thrown into a world of sadistic inmates and enigmatic p
       </Card>
     </Col>
     <Col>
-    <ReviewCollapse/>
-    <WriteReviewCollapse token={props.token}/>
+    <DeadmanWonderlandReviewCollapse/>
+    <ReviewModalDeadmanWonderland token={props.token}/>
         {/* <ReviewModal token={props.token}/> */}
         <Button color="primary" onClick={toggle} size="lg" block>Close</Button></Col>
         </ModalBody>

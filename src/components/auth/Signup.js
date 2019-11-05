@@ -18,6 +18,7 @@ let handleSubmit = (event) => {
         (response) => response.json()
     ).then((data) => {
         props.updateToken(data.sessionToken)
+        props.toggle();
     })
 }
 

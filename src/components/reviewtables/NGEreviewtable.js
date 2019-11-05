@@ -28,7 +28,7 @@ const mangareviewMapper = () => {
         return (
             manga.reviews.map((review, index) => (
             <tr key={index}>
-                <th scope="row">{review.mangaTitle}</th>
+                <th scope="row">{review.reviewer}</th>
                 {/* <td>{props.owner.id}</td> */}
                 <td>{review.rating}</td>
                 <td>{review.paragraph}</td>
@@ -52,9 +52,9 @@ return(
     <Table striped>
         <thead>
             <tr>
-                <th>MangaName</th>
+                <th>Reviewer Name</th>
                 <th>Rating</th>
-                <th>Paragraph</th>
+                <th>Review</th>
             </tr>
         </thead>
         <tbody>

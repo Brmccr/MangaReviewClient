@@ -6,6 +6,8 @@ import './mangamodal.css';
 import ReviewCollapse from './mangareviewcollapse';
 import WriteReviewCollapse from '../Views/writereviewcollapse';
 import MadeInAbyssCarousel from './MadeInAbysscarousel';
+import MadeInAbyssReviewCollapse from '../reviewtables/MadeInAbyssCollapse';
+import ReviewModalMadeInAbyss from '../MadeInAbyssManga/reviewmodalMadeInAbyss';
 
 const MadeInAbyssModal = (props) => {
   const {
@@ -44,8 +46,8 @@ Riko, daughter of the missing White Whistle Lyza the Annihilator, aspires to bec
       </Card>
     </Col>
     <Col>
-    <ReviewCollapse/>
-    <WriteReviewCollapse token={props.token}/>
+    <MadeInAbyssReviewCollapse/>
+    <ReviewModalMadeInAbyss token={props.token}/>
         {/* <ReviewModal token={props.token}/> */}
         <Button color="primary" onClick={toggle} size="lg" block>Close</Button></Col>
         </ModalBody>

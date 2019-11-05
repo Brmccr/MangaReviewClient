@@ -6,6 +6,8 @@ import './mangamodal.css';
 import DeathNotecarousel from './DeathNotecarousel';
 import ReviewCollapse from './mangareviewcollapse';
 import WriteReviewCollapse from '../Views/writereviewcollapse';
+import DeathNoteReviewCollapse from '../reviewtables/DeathNoteCollapse';
+import ReviewModalDeathNote from '../DeathNoteManga/reviewmodalNGE';
 
 const DeathNoteModal = (props) => {
   const {
@@ -47,8 +49,8 @@ With this divine capability, Light decides to extinguish all criminals in order 
       </Card>
     </Col>
     <Col>
-    <ReviewCollapse/>
-    <WriteReviewCollapse token={props.token}/>
+    <DeathNoteReviewCollapse/>
+    <ReviewModalDeathNote token={props.token}/>
         {/* <ReviewModal token={props.token}/> */}
         <Button color="primary" onClick={toggle} size="lg" block>Close</Button></Col>
         </ModalBody>

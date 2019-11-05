@@ -6,6 +6,8 @@ const Login = (props) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
+    console.log(props)
+    
 const handleSubmit = (event) => {
     event.preventDefault();
     fetch(`${APIURL}/manga/login/`, {
@@ -18,6 +20,7 @@ const handleSubmit = (event) => {
         (response) => response.json()
     ).then((data) => {
         props.updateToken(data.sessionToken);
+        props.toggle();
     })
 }
 

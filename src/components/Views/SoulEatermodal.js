@@ -6,6 +6,8 @@ import './mangamodal.css';
 import ReviewCollapse from './mangareviewcollapse';
 import WriteReviewCollapse from '../Views/writereviewcollapse';
 import SoulEaterCarousel from './SoulEatercarousel';
+import SoulEaterReviewCollapse from '../reviewtables/SoulEaterCollapse';
+import ReviewModalSoulEater from '../SoulEaterManga/reviewmodalSoulEater';
 
 const SoulEaterModal = (props) => {
   const {
@@ -47,8 +49,8 @@ Soul Eater follows these students of Shibusen as they take on missions to collec
       </Card>
     </Col>
     <Col>
-    <ReviewCollapse/>
-    <WriteReviewCollapse token={props.token}/>
+    <SoulEaterReviewCollapse/>
+    <ReviewModalSoulEater token={props.token}/>
         {/* <ReviewModal token={props.token}/> */}
         <Button color="primary" onClick={toggle} size="lg" block>Close</Button></Col>
         </ModalBody>

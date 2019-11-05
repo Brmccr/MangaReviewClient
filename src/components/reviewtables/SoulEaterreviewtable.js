@@ -2,11 +2,11 @@ import React, {useState, useEffect} from 'react';
 import {Table, Button} from 'reactstrap';
 import APIURL from '../../helpers/environment';
 
-const MangaReviewTable = (props) => {
+const SoulEaterReviewTable = (props) => {
     const [mangareviews, setmangaReviews] = useState([]);
 
 const fetchmangaReviews = () => {
-    fetch(`${APIURL}/manga/reviewberserk`, {
+    fetch(`${APIURL}/manga/reviewsouleater`, {
         method: 'GET',
         headers: new Headers ({
             'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const mangareviewMapper = () => {
 
 return(
     <>
-    <h3>Berserk Reviews</h3>
+    <h3>Soul Eater Reviews</h3>
     <hr/>
     <Table striped>
         <thead>
@@ -65,4 +65,4 @@ return(
 )
 }
 
-export default MangaReviewTable;
+export default SoulEaterReviewTable;

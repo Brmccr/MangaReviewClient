@@ -17,9 +17,9 @@ const ProfileModal = (props) => {
 
   return (
     <div>
-      <Button outline color="primary" onClick={toggle}>{buttonLabel}Profile</Button>
+      <Button outline color="primary" onClick={toggle}>{buttonLabel}My Reviews</Button>
       <Modal top width="100%" isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}><h1>MyProfile(Return Username?)</h1></ModalHeader>
+        {/* <ModalHeader toggle={toggle}><h1>MyProfile(Return Username?)</h1></ModalHeader> */}
         <ModalBody>
         <Col md={12}>
       <ReviewProfileIndex token={props.token}/>

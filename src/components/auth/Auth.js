@@ -17,10 +17,10 @@ const toggleAuth = () => {
         <Container className="auth-container">
             <Row>
                 <Col md="6">
-                    <Signup updateToken={props.updateToken}/>
+                    <Signup toggle={toggleAuth} updateToken={props.updateToken}/>
                 </Col>
                 <Col md="6" className="login-col">
-                    <Login updateToken={props.updateToken}/>
+                    <Login toggle={toggleAuth} updateToken={props.updateToken}/>
                 </Col>
             </Row>
         </Container>
