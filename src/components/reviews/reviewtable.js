@@ -42,9 +42,9 @@ const ReviewTable = (props) => {
         <Table striped>
             <thead>
                 <tr>
-                    <th>MangaName</th>
+                    <th>Manga Name</th>
                     <th>Rating</th>
-                    <th>Paragraph</th>
+                    <th>Review</th>
                 </tr>
             </thead>
             <tbody>

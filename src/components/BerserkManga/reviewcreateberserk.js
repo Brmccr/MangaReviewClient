@@ -33,11 +33,11 @@ const ReviewCreateBerserk = (props) => {
         <Form onSubmit={handleSubmit}>
             <FormGroup>
                 <Label htmlFor="reviewer"/>
-                <h3>Reviewer Name</h3>
-                <Input name="reviewer" value={reviewer} onChange={(e) => setReviewer(e.target.value)}>
+                <h4>Reviewer Name</h4>
+                <Input name="reviewer" placeholder='Your Name Here' value={reviewer} onChange={(e) => setReviewer(e.target.value)}>
                 </Input>
                 <Label htmlFor="rating"/>
-                <h3>Rate 1-5</h3>
+                <h4>Rate 1-5</h4>
                 <Input type="select" name ="rating" value={rating} onChange={(e) => setRating(e.target.value)}>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -45,11 +45,9 @@ const ReviewCreateBerserk = (props) => {
                 <option value="4">4</option>
                 <option value="5">5</option>
                 </Input>
-            </FormGroup>
-            <FormGroup>
                 <Label htmlFor="paragraph"/>
-                <h3>Share Your Opinion</h3>
-                <Input name="paragraph" value={paragraph} onChange={(e) => setParagraph(e.target.value)}>
+                <h4>Share Your Opinion</h4>
+                <Input name="paragraph" placeholder='Type Your Review Here' value={paragraph} onChange={(e) => setParagraph(e.target.value)}>
                 </Input>
             </FormGroup>
             <Button type="submit">Submit Review</Button>
