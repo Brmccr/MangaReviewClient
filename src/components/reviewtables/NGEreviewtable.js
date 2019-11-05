@@ -6,7 +6,7 @@ const NGEMangaReviewTable = (props) => {
     const [mangareviews, setmangaReviews] = useState([]);
 
 const fetchmangaReviews = () => {
-    fetch(`${APIURL}manga/reviewNGE`, {
+    fetch(`${APIURL}/manga/reviewNGE`, {
         method: 'GET',
         headers: new Headers ({
             'Content-Type': 'application/json',
