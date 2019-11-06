@@ -8,6 +8,7 @@ import ReviewCollapse from './mangareviewcollapse';
 import WriteReviewCollapse from '../Views/writereviewcollapse';
 import ReviewModalBerserk from '../BerserkManga/reviewmodalberserk';
 import { relative } from 'path';
+import AuthModal from '../auth/authmodal';
 
 const MangaModal = (props) => {
   const {
@@ -45,7 +46,9 @@ Setting out on a dreadful quest riddled with misfortune, Guts, armed with a mass
     </Col>
     <Col>
     <ReviewCollapse/>
-    <ReviewModalBerserk token={props.token}/>
+    {localStorage.getItem('token') ? <ReviewModalBerserk token={props.token}/> : <Button color="primary" size="lg" block>SignIn Needed To Post A Review</Button> }
+    {/* {localStorage.getItem('token') ? <ReviewModalBerserk token={props.token}/> : <AuthModal token={props.token}/> } */}
+    {/* <ReviewModalBerserk token={props.token}/> */}
         {/* <ReviewModal token={props.token}/> */}
         <Button color="primary" onClick={toggle} size="lg" block>Close</Button>
           {/* <Button color="primary" onClick={toggle}>Close</Button>

@@ -107,7 +107,7 @@ const updateToken = (newToken) => {
         <CardImg style={{
             height: '15em',
             width: 'auto'
-        }} src="https://images7.alphacoders.com/860/thumb-1920-860635.jpg" alt="Liar Game" />
+        }} src="https://images7.alphacoders.com/860/thumb-1920-860635.jpg" alt="Made In Abyss" />
         <CardBody>
           <CardTitle><h5>Made In Abyss</h5></CardTitle>
           <CardText>Action, Adventure, Drama, Fantasy, Sci-Fi</CardText>
@@ -121,7 +121,7 @@ const updateToken = (newToken) => {
         <CardImg style={{
             height: '15em',
             width: 'auto'
-        }}  src="https://wallpaperplay.com/walls/full/9/0/5/274004.jpg" alt="Berserk" />
+        }}  src="https://wallpaperplay.com/walls/full/9/0/5/274004.jpg" alt="Soul Eater" />
         <CardBody>
           <CardTitle><h5>Soul Eater</h5></CardTitle>
           <CardText>Action, Fantasy, Shounen, Supernatural</CardText>
@@ -135,7 +135,7 @@ const updateToken = (newToken) => {
         <CardImg style={{
             height: '15em',
             width: 'auto'
-        }} src="https://cdn.myanimelist.net/images/manga/3/192659l.jpg" alt="Berserk" />
+        }} src="https://cdn.myanimelist.net/images/manga/3/192659l.jpg" alt="Deadman Wonderland" />
         <CardBody>
           <CardTitle><h5>Deadman Wonderland</h5></CardTitle>
           <CardText>Action, Adventure, Sci-Fi, Supernatural</CardText>

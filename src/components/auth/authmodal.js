@@ -3,6 +3,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Container, Row, Col
 import Signup from './Signup';
 import Auth from './Auth';
 import Login from './Login';
+import './auth.css';
 
 const AuthModal = (props) => {
   const {
@@ -19,7 +20,7 @@ const AuthModal = (props) => {
       <Button outline color="primary" onClick={toggle}>{buttonLabel}SignIn/SignUp</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         {/* <ModalHeader toggle={toggle}>Modal title</ModalHeader> */}
-        <ModalBody>
+        <ModalBody className="LoginModal">
         <Container className="auth-container">
             <Row>
                 <Col md="6">

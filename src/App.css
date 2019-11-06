@@ -1,8 +1,21 @@
 .App {
   text-align: center;
-  background-color: #0e0b16;
+  /* background-color: #0e0b16; */
+  animation: moveIt 10s linear infinite;
+  animation-direction: alternate;
   /* #0e0b16 */
 }
+
+@keyframes moveIt{
+  0%{background-color: #0e0b16;}
+  100%{background-color: black;}
+}
+
+/* .LoginModal:hover{
+    border-radius: 40px 60px 40px 60px;
+    transition-duration: 750ms;
+    background-color: black;
+} */
 
 .appcard:hover{
   transform: scale(1.05);

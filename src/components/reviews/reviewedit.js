@@ -26,7 +26,7 @@ const ReviewEdit = (props) => {
     }
 return(
     <Modal isOpen={true}>
-        <ModalHeader>Write a Review</ModalHeader>
+        <ModalHeader>Update a Review</ModalHeader>
         <ModalBody>
             <Form onSubmit={reviewUpdate}>
                 <FormGroup>
@@ -38,8 +38,6 @@ return(
                 <option value="4">4</option>
                 <option value="5">5</option>
                 </Input>
-                </FormGroup>
-                <FormGroup>
                     <Label htmlFor="paragraph">Edit Paragraph</Label>
                     <Input name="paragraph" value={editPar} onChange={(e) => setEditPar(e.target.value)}/>
                 </FormGroup>

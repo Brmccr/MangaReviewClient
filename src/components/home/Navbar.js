@@ -23,6 +23,7 @@ const toggle = () => {
     let newIsOpen = !isOpen;
     setIsOpen(newIsOpen);
 }
+
     return(
         <Navbar color ="faded" light expand="md">
             <NavbarBrand href="/"><h3 style={{
@@ -41,10 +42,11 @@ const toggle = () => {
                         position: 'relative'
                     }}>
                         {/* <AuthModal updateToken={updateToken}/> */}
+                        {/* {protectedViews()} */}
                         <InstuctionsModal/>
-                        <ProfileModal token={props.token}/>
-                        <AuthModal updateToken={props.updateToken}/>
-                        <Button onClick={props.clearToken} outline color="primary">Logout</Button>{' '}
+                        {localStorage.getItem('token') ? <ProfileModal token={props.token}/> : <></> }
+                        {!localStorage.getItem('token') ? <AuthModal updateToken={props.updateToken}/> : <></> }
+                        {localStorage.getItem('token') ? <Button onClick={props.clearToken} outline color="primary">Logout</Button> : <></> }
                     </NavItem>
     
                 </Nav>

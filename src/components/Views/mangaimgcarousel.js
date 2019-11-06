@@ -15,7 +15,22 @@ const items = [
     // caption: 'Slide 1'
   },
   {
-    src: 'https://i.pinimg.com/originals/b0/f6/33/b0f633defac418a63ce25792bc881028.png',
+    src: 'https://i2.mangareader.net/berserk/21/berserk-1592268.jpg',
+    // altText: 'Slide 2',
+    // caption: 'Slide 2'
+  },
+  {
+    src: 'https://i8.mangareader.net/berserk/26/berserk-1592741.jpg',
+    // altText: 'Slide 2',
+    // caption: 'Slide 2'
+  },
+  {
+    src: 'https://goboiano.com/wp-content/uploads/2017/06/Berserk-2.jpg',
+    // altText: 'Slide 2',
+    // caption: 'Slide 2'
+  },
+  {
+    src: 'https://miro.medium.com/max/2800/0*uwFT6-DYRMlaVsan.',
     // altText: 'Slide 2',
     // caption: 'Slide 2'
   },
