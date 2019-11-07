@@ -48,7 +48,7 @@ const ReviewCreateBerserk = (props) => {
                 </Input>
                 <Label htmlFor="paragraph"/>
                 <h4>Share Your Opinion</h4>
-                <Input name="paragraph" placeholder='Type Your Review Here' value={paragraph} onChange={(e) => setParagraph(e.target.value)}>
+                <Input name="paragraph" placeholder='Type Your Review Here' pattern="(?=.*[a-z0-9]).{0,300}" value={paragraph} onChange={(e) => setParagraph(e.target.value)}>
                 </Input>
             </FormGroup>
             <Button type="submit">Submit Review</Button>

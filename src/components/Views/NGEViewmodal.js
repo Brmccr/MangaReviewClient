@@ -50,7 +50,8 @@ Suddenly with the weight of the world upon his shoulders, Shinji must find the c
     </Col>
     <Col>
     <NGEReviewCollapse/>
-    <ReviewModalNGE token={props.token}/>
+    {localStorage.getItem('token') ? <ReviewModalNGE token={props.token}/> : <Button color="primary" size="lg" block>SignIn Needed To Post A Review</Button> }
+    {/* <ReviewModalNGE token={props.token}/> */}
         {/* <ReviewModal token={props.token}/> */}
         <Button color="primary" onClick={toggle} size="lg" block>Close</Button></Col>
         </ModalBody>

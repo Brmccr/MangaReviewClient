@@ -25,7 +25,7 @@ const items = [
     // caption: 'Slide 3'
   },
   {
-    src: 'https://static1.fjcdn.com/comments/The+manga+was+better+anyway+came+out+before+the+anime+_053b7963b50673a49b170aca0e84c8d4.jpg',
+    src: 'https://memeworld.funnyjunk.com/comments/The+manga+was+better+anyway+came+out+before+the+anime+_053b7963b50673a49b170aca0e84c8d4.jpg',
     // altText: 'Slide 3',
     // caption: 'Slide 3'
   }

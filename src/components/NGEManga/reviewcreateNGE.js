@@ -50,7 +50,7 @@ const ReviewCreateNGE = (props) => {
             <FormGroup>
                 <Label htmlFor="paragraph"/>
                 <h3>Share Your Opinion</h3>
-                <Input name="paragraph" placeholder='Type Your Review Here' value={paragraph} onChange={(e) => setParagraph(e.target.value)}>
+                <Input name="paragraph" placeholder='Type Your Review Here' pattern="(?=.*[a-z0-9]).{0,300}" value={paragraph} onChange={(e) => setParagraph(e.target.value)}>
                 </Input>
             </FormGroup>
             <Button type="submit">Submit Review</Button>

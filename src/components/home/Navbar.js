@@ -43,7 +43,7 @@ const toggle = () => {
                     }}>
                         {/* <AuthModal updateToken={updateToken}/> */}
                         {/* {protectedViews()} */}
-                        <InstuctionsModal/>
+                        {/* <InstuctionsModal/> */}
                         {localStorage.getItem('token') ? <ProfileModal token={props.token}/> : <></> }
                         {!localStorage.getItem('token') ? <AuthModal updateToken={props.updateToken}/> : <></> }
                         {localStorage.getItem('token') ? <Button onClick={props.clearToken} outline color="primary">Logout</Button> : <></> }

@@ -38,7 +38,7 @@ const ReviewCreateDeadmanWonderland = (props) => {
                 </Input>
                 <Label htmlFor="rating"/>
                 <h3>Rate 1-5</h3>
-                <Input type="select" placeholder='Type Your Review Here' name ="rating" required value={rating} onChange={(e) => setRating(e.target.value)}>
+                <Input type="select"  name ="rating" required value={rating} onChange={(e) => setRating(e.target.value)}>
                 <option></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -50,7 +50,7 @@ const ReviewCreateDeadmanWonderland = (props) => {
             <FormGroup>
                 <Label htmlFor="paragraph"/>
                 <h3>Share Your Opinion</h3>
-                <Input name="paragraph" value={paragraph} onChange={(e) => setParagraph(e.target.value)}>
+                <Input name="paragraph" placeholder='Type Your Review Here' pattern="(?=.*[a-z0-9]).{0,300}" value={paragraph} onChange={(e) => setParagraph(e.target.value)}>
                 </Input>
             </FormGroup>
             <Button type="submit">Submit Review</Button>
