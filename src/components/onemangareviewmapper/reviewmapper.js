@@ -24,6 +24,7 @@ useEffect(() => {
 
 
 const mangareviewMapper = () => {
+    console.log(mangareviews);
     return mangareviews.map((manga, index) => {
         return (
             manga.reviews.map((review, index) => (
