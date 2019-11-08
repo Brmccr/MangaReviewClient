@@ -20,7 +20,7 @@ const ReviewTable = (props) => {
         return props.reviews.map((review, index) => {
             return(
                 <tr key={index}>
-                    <th scope="row">{review.mangaTitle}</th>
+                    <th scope="row">{review.mangatitle}</th>
                     {/* <td>{props.owner.id}</td> */}
                     <td>{review.rating}</td>
                     <td>{review.paragraph}</td>

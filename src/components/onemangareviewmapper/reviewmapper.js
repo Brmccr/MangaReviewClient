@@ -58,7 +58,7 @@ return(
             </tr>
         </thead>
         <tbody>
-            {/* {mangareviewMapper()} */}
+            {mangareviewMapper()}
         </tbody>
     </Table>
     </>

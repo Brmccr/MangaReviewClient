@@ -38,7 +38,7 @@ const ReviewCreateDeadmanWonderland = (props) => {
                 </Input>
                 <Label htmlFor="rating"/>
                 <h3>Rate 1-5</h3>
-                <Input type="select"  name ="rating" required value={rating} onChange={(e) => setRating(e.target.value)}>
+                <Input type="select"  name="rating" required value={rating} onChange={(e) => setRating(e.target.value)}>
                 <option></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
