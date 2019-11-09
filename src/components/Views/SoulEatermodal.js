@@ -50,7 +50,7 @@ Soul Eater follows these students of Shibusen as they take on missions to collec
     </Col>
     <Col>
     <SoulEaterReviewCollapse/>
-    <ReviewModalSoulEater token={props.token}/>
+    {localStorage.getItem('token') ? <ReviewModalSoulEater token={props.token}/> : <Button color="primary" size="lg" block>SignIn Needed To Post A Review</Button> }
         {/* <ReviewModal token={props.token}/> */}
         <Button color="primary" onClick={toggle} size="lg" block>Close</Button></Col>
         </ModalBody>

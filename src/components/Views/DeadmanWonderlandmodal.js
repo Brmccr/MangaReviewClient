@@ -50,7 +50,7 @@ The young protagonist is thrown into a world of sadistic inmates and enigmatic p
     </Col>
     <Col>
     <DeadmanWonderlandReviewCollapse/>
-    <ReviewModalDeadmanWonderland token={props.token}/>
+    {localStorage.getItem('token') ? <ReviewModalDeadmanWonderland token={props.token}/> : <Button color="primary" size="lg" block>SignIn Needed To Post A Review</Button> }
         {/* <ReviewModal token={props.token}/> */}
         <Button color="primary" onClick={toggle} size="lg" block>Close</Button></Col>
         </ModalBody>
