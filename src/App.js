@@ -121,7 +121,7 @@ const updateToken = (newToken) => {
         <CardImg style={{
             height: '15em',
             width: 'auto'
-        }}  src="https://wallpaperplay.com/walls/full/9/0/5/274004.jpg" alt="Soul Eater" />
+        }}  src="https://wallpapercave.com/wp/BLjQ52g.jpg" alt="Soul Eater" />
         <CardBody>
           <CardTitle><h5>Soul Eater</h5></CardTitle>
           <CardText>Action, Fantasy, Shounen, Supernatural</CardText>
