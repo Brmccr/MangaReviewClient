@@ -67,7 +67,7 @@ const updateToken = (newToken) => {
         }} src="https://i.redd.it/cu0uoae082111.png" alt="Berserk" />
         <CardBody>
           <CardTitle><h5>Berserk</h5></CardTitle>
-          <CardText>Genres: Action, Adventure, Fantasy, Supernatural,Psychological</CardText>
+          <CardText>Genres: Action, Adventure, Fantasy, Supernatural, Psychological</CardText>
           <MangaModal token={sessionToken}/>
         </CardBody>
       </Card>
