@@ -32,7 +32,7 @@ const AuthModal = (props) => {
             </Row>
         </Container>
         </ModalBody>
-        <ModalFooter>
+        <ModalFooter classname="modalFooter">
           {/* <Button color="primary" onClick={toggle}>Do Something</Button>{' '} */}
           <Button color="secondary" onClick={toggle}>Cancel</Button>
         </ModalFooter>

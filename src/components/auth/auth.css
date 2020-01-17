@@ -7,3 +7,23 @@
     transition-duration: 750ms;
     background-color: black;
 } */
+
+
+@media(max-width: 550px){
+    .LoginModal{display: flex;
+        width: 30em !important;
+        align-content: center;
+        left: 5em;}
+}
+
+@media(max-width: 400px){
+    .LoginModal{display: flex;
+        width: 20em !important;
+        align-content: center;
+        left: 4em;}
+}
+
+.modalFooter{
+    display: flex !important;
+    left: -10em !important;
+}

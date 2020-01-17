@@ -50,7 +50,10 @@ With this divine capability, Light decides to extinguish all criminals in order 
     </Col>
     <Col>
     <DeathNoteReviewCollapse/>
-    {localStorage.getItem('token') ? <ReviewModalDeathNote token={props.token}/> : <Button color="primary" size="lg" block>SignIn Needed To Post A Review</Button> }
+    {localStorage.getItem('token') ? <ReviewModalDeathNote token={props.token}/> : <Button style={{
+      marginBottom: '-.2em',
+      marginTop : '.2em'
+    }}color="primary" size="lg" block>SignIn Needed To Post A Review</Button> }
         {/* <ReviewModal token={props.token}/> */}
         <Button color="primary" onClick={toggle} size="lg" block>Close</Button></Col>
         </ModalBody>

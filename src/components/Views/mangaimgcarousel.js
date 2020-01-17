@@ -6,7 +6,8 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import './mangamodal.css';
+// import './mangamodal.css';
+import './imagesrc.css';
 
 const items = [
   {

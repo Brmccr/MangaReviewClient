@@ -1,0 +1,7 @@
+img {
+    display: 'flex';
+    position: 'relative';
+    width:'35em';
+    height: '25em';
+    left: '1em';
+  }

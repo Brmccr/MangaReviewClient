@@ -16,7 +16,10 @@ const ReviewModalBerserk = (props) => {
 
   return (
     <div>
-      <Button color="primary" onClick={toggle} size="lg" block>Write A Review</Button>
+      <Button style={{
+        marginBottom: '.2em',
+        marginTop : '.2em'
+      }}color="primary" onClick={toggle} size="lg" block>Write A Review</Button>
       <Modal top width="100%" isOpen={modal} toggle={toggle} className={className}>
         {/* <ModalHeader toggle={toggle}>Write A Review</ModalHeader> */}
         <ModalBody>

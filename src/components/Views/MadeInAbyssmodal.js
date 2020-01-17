@@ -47,7 +47,10 @@ Riko, daughter of the missing White Whistle Lyza the Annihilator, aspires to bec
     </Col>
     <Col>
     <MadeInAbyssReviewCollapse/>
-    {localStorage.getItem('token') ? <ReviewModalMadeInAbyss token={props.token}/> : <Button color="primary" size="lg" block>SignIn Needed To Post A Review</Button> }
+    {localStorage.getItem('token') ? <ReviewModalMadeInAbyss token={props.token}/> : <Button style={{
+      marginBottom: '-.2em',
+      marginTop : '.2em'
+    }}color="primary" size="lg" block>SignIn Needed To Post A Review</Button> }
         {/* <ReviewModal token={props.token}/> */}
         <Button color="primary" onClick={toggle} size="lg" block>Close</Button></Col>
         </ModalBody>
